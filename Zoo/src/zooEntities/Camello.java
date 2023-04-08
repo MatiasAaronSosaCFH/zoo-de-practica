@@ -13,42 +13,30 @@ public class Camello {
     
     public Camello(){
     
-        setEspecie("Animal");
-        setJorobas(2);
-        setFamilia("Felino");
     }
     
     public Camello(String nombre){
     
         setNombre(nombre);
-        setEspecie("Animal");
-        setJorobas(2);
-        setFamilia("Felino");
     }
     
     public Camello(String nombre, double peso){
         
         setNombre(nombre);
         setPeso(peso);
-        setEspecie("Animal");
-        setJorobas(2);
-        setFamilia("Felino");
     }
     
     public Camello(String nombre, double peso, char sexo ){
         
         setNombre(nombre);
         setPeso(peso);
-        setEspecie("Animal");
-        setJorobas(2);
-        setFamilia("Felino");
         setSexo(sexo);
     }
     
     private static String nombre;
-    private static String familia;
-    private String especie;
-    private int jorobas;
+    private static String familia = "Felino";
+    private String especie = "Animal";
+    private int jorobas =(int) Math.random()*3;
     private int edad;
     private double peso;
     private char sexo;
@@ -81,9 +69,6 @@ public class Camello {
         return sexo;
     }
     
-    public void setFamilia(String familia){
-        this.familia = familia;
-    }
     public void setEdad(int edad){
         this.edad = edad;
     }
@@ -92,13 +77,6 @@ public class Camello {
         this.nombre = nombre;
     }
 
-    public void setEspecie(String especie) {
-        this.especie = especie;
-    }
-
-    public void setJorobas(int jorobas) {
-        this.jorobas = jorobas;
-    }
 
     public void setPeso(double peso) {
         this.peso = peso;
